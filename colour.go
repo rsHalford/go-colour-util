@@ -64,7 +64,7 @@ const (
 	reset = "\x1b[0m"
 )
 
-const version string = "v0.1.0"
+const version string = "v0.2.0"
 
 func style(start, s string) string {
 	return start + s + reset
