@@ -17,41 +17,41 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 package colour
 
 const (
-	blackFore   = "\x1b[30m"
-	redFore     = "\x1b[31m"
-	greenFore   = "\x1b[32m"
-	yellowFore  = "\x1b[33m"
-	blueFore    = "\x1b[34m"
-	magentaFore = "\x1b[35m"
-	cyanFore    = "\x1b[36m"
-	whiteFore   = "\x1b[37m"
+	blackFG   = "\x1b[30m"
+	redFG     = "\x1b[31m"
+	greenFG   = "\x1b[32m"
+	yellowFG  = "\x1b[33m"
+	blueFG    = "\x1b[34m"
+	magentaFG = "\x1b[35m"
+	cyanFG    = "\x1b[36m"
+	whiteFG   = "\x1b[37m"
 
-	blackBack   = "\x1b[40m"
-	redBack     = "\x1b[41m"
-	greenBack   = "\x1b[42m"
-	yellowBack  = "\x1b[43m"
-	blueBack    = "\x1b[44m"
-	magentaBack = "\x1b[45m"
-	cyanBack    = "\x1b[46m"
-	whiteBack   = "\x1b[47m"
+	blackBG   = "\x1b[40m"
+	redBG     = "\x1b[41m"
+	greenBG   = "\x1b[42m"
+	yellowBG  = "\x1b[43m"
+	blueBG    = "\x1b[44m"
+	magentaBG = "\x1b[45m"
+	cyanBG    = "\x1b[46m"
+	whiteBG   = "\x1b[47m"
 
-	brightBlackFore   = "\x1b[90m"
-	brightRedFore     = "\x1b[91m"
-	brightGreenFore   = "\x1b[92m"
-	brightYellowFore  = "\x1b[93m"
-	brightBlueFore    = "\x1b[94m"
-	brightMagentaFore = "\x1b[95m"
-	brightCyanFore    = "\x1b[96m"
-	brightWhiteFore   = "\x1b[97m"
+	blackFGB   = "\x1b[90m"
+	redFGB     = "\x1b[91m"
+	greenFGB   = "\x1b[92m"
+	yellowFGB  = "\x1b[93m"
+	blueFGB    = "\x1b[94m"
+	magentaFGB = "\x1b[95m"
+	cyanFGB    = "\x1b[96m"
+	whiteFGB   = "\x1b[97m"
 
-	brightBlackBack   = "\x1b[100m"
-	brightRedBack     = "\x1b[101m"
-	brightGreenBack   = "\x1b[102m"
-	brightYellowBack  = "\x1b[103m"
-	brightBlueBack    = "\x1b[104m"
-	brightMagentaBack = "\x1b[105m"
-	brightCyanBack    = "\x1b[106m"
-	brightWhiteBack   = "\x1b[107m"
+	blackBGB   = "\x1b[100m"
+	redBGB     = "\x1b[101m"
+	greenBGB   = "\x1b[102m"
+	yellowBGB  = "\x1b[103m"
+	blueBGB    = "\x1b[104m"
+	magentaBGB = "\x1b[105m"
+	cyanBGB    = "\x1b[106m"
+	whiteBGB   = "\x1b[107m"
 
 	bold       = "\x1b[1m"
 	faint      = "\x1b[2m"
@@ -70,132 +70,132 @@ func style(start, s string) string {
 	return start + s + reset
 }
 
-func BlackFore(s string) string {
-	return style(blackFore, s)
+func BlaFG(s string) string {
+	return style(blackFG, s)
 }
 
-func RedFore(s string) string {
-	return style(redFore, s)
+func RedFG(s string) string {
+	return style(redFG, s)
 }
 
-func GreenFore(s string) string {
-	return style(greenFore, s)
+func GreFG(s string) string {
+	return style(greenFG, s)
 }
 
-func YellowFore(s string) string {
-	return style(yellowFore, s)
+func YelFG(s string) string {
+	return style(yellowFG, s)
 }
 
-func BlueFore(s string) string {
-	return style(blueFore, s)
+func BluFG(s string) string {
+	return style(blueFG, s)
 }
 
-func MagentaFore(s string) string {
-	return style(magentaFore, s)
+func MagFG(s string) string {
+	return style(magentaFG, s)
 }
 
-func CyanFore(s string) string {
-	return style(cyanFore, s)
+func CyaFG(s string) string {
+	return style(cyanFG, s)
 }
 
-func WhiteFore(s string) string {
-	return style(whiteFore, s)
+func WhiFG(s string) string {
+	return style(whiteFG, s)
 }
 
-func BlackBack(s string) string {
-	return style(blackBack, s)
+func BlackBG(s string) string {
+	return style(blackBG, s)
 }
 
-func RedBack(s string) string {
-	return style(redBack, s)
+func RedBG(s string) string {
+	return style(redBG, s)
 }
 
-func GreenBack(s string) string {
-	return style(greenBack, s)
+func GreBG(s string) string {
+	return style(greenBG, s)
 }
 
-func YellowBack(s string) string {
-	return style(yellowBack, s)
+func YelBG(s string) string {
+	return style(yellowBG, s)
 }
 
-func BlueBack(s string) string {
-	return style(blueBack, s)
+func BluBG(s string) string {
+	return style(blueBG, s)
 }
 
-func MagentaBack(s string) string {
-	return style(magentaBack, s)
+func MagBG(s string) string {
+	return style(magentaBG, s)
 }
 
-func CyanBack(s string) string {
-	return style(cyanBack, s)
+func CyaBG(s string) string {
+	return style(cyanBG, s)
 }
 
-func WhiteBack(s string) string {
-	return style(whiteBack, s)
+func WhiBG(s string) string {
+	return style(whiteBG, s)
 }
 
-func BrightBlackFore(s string) string {
-	return style(brightBlackFore, s)
+func BlaFGB(s string) string {
+	return style(blackFGB, s)
 }
 
-func BrightRedFore(s string) string {
-	return style(brightRedFore, s)
+func RedFGB(s string) string {
+	return style(redFGB, s)
 }
 
-func BrightGreenFore(s string) string {
-	return style(brightGreenFore, s)
+func GreFGB(s string) string {
+	return style(greenFGB, s)
 }
 
-func BrightYellowFore(s string) string {
-	return style(brightYellowFore, s)
+func YelFGB(s string) string {
+	return style(yellowFGB, s)
 }
 
-func BrightBlueFore(s string) string {
-	return style(brightBlueFore, s)
+func BluFGB(s string) string {
+	return style(blueFGB, s)
 }
 
-func BrightMagentaFore(s string) string {
-	return style(brightMagentaFore, s)
+func MagFGB(s string) string {
+	return style(magentaFGB, s)
 }
 
-func BrightCyanFore(s string) string {
-	return style(brightCyanFore, s)
+func CyaFGB(s string) string {
+	return style(cyanFGB, s)
 }
 
-func BrightWhiteFore(s string) string {
-	return style(brightWhiteFore, s)
+func WhiFGB(s string) string {
+	return style(whiteFGB, s)
 }
 
-func BrightBlackBack(s string) string {
-	return style(brightBlackBack, s)
+func BlaBGB(s string) string {
+	return style(blackBGB, s)
 }
 
-func BrightRedBack(s string) string {
-	return style(brightRedBack, s)
+func RedBGB(s string) string {
+	return style(redBGB, s)
 }
 
-func BrightGreenBack(s string) string {
-	return style(brightGreenBack, s)
+func GreBGB(s string) string {
+	return style(greenBGB, s)
 }
 
-func BrightYellowBack(s string) string {
-	return style(brightYellowBack, s)
+func YelBGB(s string) string {
+	return style(yellowBGB, s)
 }
 
-func BrightBlueBack(s string) string {
-	return style(brightBlueBack, s)
+func BluBGB(s string) string {
+	return style(blueBGB, s)
 }
 
-func BrightMagentaBack(s string) string {
-	return style(brightMagentaBack, s)
+func MagBGB(s string) string {
+	return style(magentaBGB, s)
 }
 
-func BrightCyanBack(s string) string {
-	return style(brightCyanBack, s)
+func CyaBGB(s string) string {
+	return style(cyanBGB, s)
 }
 
-func BrightWhiteBack(s string) string {
-	return style(brightWhiteBack, s)
+func WhiBGB(s string) string {
+	return style(whiteBGB, s)
 }
 
 func Bold(s string) string {
