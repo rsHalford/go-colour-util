@@ -102,7 +102,7 @@ func WhiFG(s string) string {
 	return style(whiteFG, s)
 }
 
-func BlackBG(s string) string {
+func BlaBG(s string) string {
 	return style(blackBG, s)
 }
 
